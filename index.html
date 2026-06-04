@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Distribuidora local de cafe de los Andes venezolanos: marcas, sembradores, cafe empacado y cafe en pepa para moler."
+      content="Kafé C.A. distribuye café venezolano premium de origen andino para tiendas, cafeterías, oficinas y compradores mayoristas."
     />
-    <title>Andes Coffee Supply | Distribuidora de Cafe Andino</title>
+    <title>Kafé C.A. | Café venezolano premium</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -19,19 +19,26 @@
   <body>
     <header class="site-header">
       <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <img src="assets/imagenes/logo/kafe-logo-dark.svg" alt="Kafe Logo" class="brand-mark" style="height:44px;width:auto;vertical-align:middle;" />
+        <img
+          src="assets/imagenes/logo/OPC_2.png"
+          alt="Kafé C.A."
+          class="brand-mark"
+        />
+        <span class="brand-copy">
+          <strong>Kafé C.A.</strong>
+          <small>Café andino</small>
+        </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Abrir menu">
-        <span></span>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
         <span></span>
         <span></span>
       </button>
 
       <nav class="site-nav" aria-label="Principal">
         <a href="#origen">Origen</a>
-        <a href="#catalogo">Catalogo</a>
-        <a href="#productores">Productores</a>
+        <a href="#catalogo">Tienda</a>
+        <a href="#historia">Historia</a>
         <a href="#mayoristas">Mayoristas</a>
         <a href="#contacto">Contacto</a>
       </nav>
@@ -40,464 +47,214 @@
     <main>
       <section class="hero" id="inicio">
         <img
-          class="hero-image"
-          src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&q=80"
-          alt="Cafe premium en empaque elegante"
+          class="hero-photo"
+          src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1800&q=82"
+          alt="Granos de café tostado sobre una superficie oscura"
         />
-        <div class="hero-overlay"></div>
-        <div class="hero-content" style="backdrop-filter: blur(2px); background: rgba(0,0,0,0.32); border-radius: 18px; padding: 2.5rem 2rem; max-width: 540px;">
-          <h1 style="font-size:2.6rem;line-height:1.1;margin-bottom:1.2rem;">Café venezolano premium, tradición y modernidad</h1>
-          <p class="hero-copy" style="font-size:1.18rem;">
-            KAFÉ c.a. es una compañía anónima venezolana dedicada a la torrefacción, comercialización y distribución de café premium venezolano.<br>
-            Ofrecemos café en grano, molido y gourmet, además de servicios para cafeterías y cultura cafetera.<br>
-            Tradición, calidad y experiencia moderna para el mercado nacional e internacional.
-          </p>
-          <div class="hero-actions" style="margin-top:2rem;">
-            <a class="btn btn-primary" href="#contacto">Solicitar información</a>
-            <a class="btn btn-secondary" href="#productos">Ver productos</a>
+        <div class="hero-scrim"></div>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">Café venezolano premium</p>
+            <h1>Origen andino, presencia contemporánea.</h1>
+            <p>
+              Kafé C.A. selecciona, tuesta y distribuye café de los Andes venezolanos
+              con una mirada limpia, artesanal y lista para negocios que cuidan cada taza.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#catalogo">Explorar catálogo</a>
+              <a class="btn btn-ghost" href="#contacto">Solicitar cotización</a>
+            </div>
           </div>
+
+          <aside class="hero-card" aria-label="Formatos destacados">
+            <img src="assets/hero-cafe.png" alt="Empaques Kafé con paisaje andino" />
+            <div>
+              <span>Molido · Grano · Gourmet</span>
+              <strong>Tostado con perfil balanceado y empaque listo para venta.</strong>
+            </div>
+          </aside>
         </div>
       </section>
 
-      <section class="section about" id="quienes-somos">
-        <div class="section-heading">
-          <h2>¿Quiénes somos?</h2>
-        </div>
-        <div style="max-width:700px;margin:0 auto 2.5rem auto;font-size:1.15rem;text-align:center;">
-          <p>
-            <strong>KAFÉ c.a.</strong> es una compañía anónima venezolana dedicada a la torrefacción, comercialización y distribución de café premium venezolano.<br>
-            La empresa ofrece café en grano, molido y gourmet, además de servicios relacionados con cafeterías y cultura cafetera.<br>
-            Su enfoque combina tradición, calidad y una experiencia moderna, buscando posicionarse como una marca elegante y profesional dentro del mercado nacional e internacional.
-          </p>
-        </div>
-      </section>
-
-      <section class="section intro" id="origen">
-        <div>
-          <p class="section-kicker">Origen local</p>
-          <h2>Una vitrina comercial para el cafe sembrado en los Andes.</h2>
+      <section class="intro section" id="origen">
+        <div class="intro-title">
+          <p class="section-kicker">La esencia</p>
+          <h2>Una marca sobria para un café con carácter de altura.</h2>
         </div>
         <div class="intro-copy">
           <p>
-            Nuestra distribuidora agrupa productores, tostadores y marcas
-            regionales para facilitar la compra constante de cafe venezolano
-            con trazabilidad, disponibilidad y precio competitivo.
+            La esencia del café andino está en las alturas. Cultivado a más de 1,500
+            metros entre la niebla y suelos ricos de la cordillera, sus granos maduran
+            lentamente, concentrando azúcares y nutrientes únicos.
+          </p>
+          <p>
+            Su equilibrio combina una acidez brillante y limpia con notas cítricas,
+            dulzor natural a chocolate y panela, y una taza sedosa con el carácter
+            de la montaña.
           </p>
           <div class="origin-list">
-            <span>Merida</span>
-            <span>Tachira</span>
+            <span>Mérida</span>
+            <span>Táchira</span>
             <span>Trujillo</span>
-            <span>Productores aliados</span>
+            <span>Tostado premium</span>
           </div>
         </div>
       </section>
 
-      <section class="metrics-strip" aria-label="Indicadores de la distribuidora">
-        <div class="metric">
-          <span>+24</span>
-          <p>referencias disponibles entre marcas, tostados y presentaciones.</p>
-        </div>
-        <div class="metric">
-          <span>3 estados</span>
-          <p>seleccion de cafe andino desde Merida, Tachira y Trujillo.</p>
-        </div>
-        <div class="metric">
-          <span>Mixto</span>
-          <p>pedidos que combinan empacado, molido y cafe en pepa.</p>
-        </div>
-        <div class="metric">
-          <span>Ruta</span>
-          <p>entregas coordinadas segun disponibilidad y zona comercial.</p>
-        </div>
+      <section class="metrics-strip" aria-label="Indicadores de Kafé C.A.">
+        <article>
+          <span>03</span>
+          <p>estados andinos como inspiración de origen y narrativa comercial.</p>
+        </article>
+        <article>
+          <span>24+</span>
+          <p>referencias flexibles entre café molido, en grano y presentaciones gourmet.</p>
+        </article>
+        <article>
+          <span>100%</span>
+          <p>enfoque venezolano para abastecimiento local y compradores frecuentes.</p>
+        </article>
       </section>
 
-      <section class="section split-feature">
-        <div class="feature-copy">
-          <p class="section-kicker">Lo que distribuimos</p>
-          <h2>Cafe listo para vender o cafe en pepa para preparar a tu manera.</h2>
-          <p>
-            Atendemos compras comerciales pequenas y volumen mayorista. Puedes
-            pedir cafe empacado con marca, cafe molido por tipo de preparacion
-            o cafe en pepa para que tu negocio lo muela al momento.
-          </p>
-        </div>
-        <div class="feature-board" aria-label="Formatos disponibles">
-          <div>
-            <span>01</span>
-            <strong>Empacado</strong>
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Cafe empacado horizontal" style="width:100%;border-radius:8px;margin-bottom:0.5rem;object-fit:cover;aspect-ratio:3/1;max-height:120px;"/>
-            <p>Presentaciones listas para anaquel, regalo corporativo o reventa.</p>
-          </div>
-          <div>
-            <span>02</span>
-            <strong>Elaborado</strong>
-            <img src="https://images.pexels.com/photos/585750/pexels-photo-585750.jpeg?auto=compress&w=400&q=80" alt="Cafe molido fresco" style="width:100%;border-radius:8px;margin-bottom:0.5rem;"/>
-            <p>Molido segun metodo: espresso, filtro, prensa o colador.</p>
-          </div>
-          <div>
-            <span>03</span>
-            <strong>En pepa</strong>
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Cafe en pepa tostado" style="width:100%;border-radius:8px;margin-bottom:0.5rem;"/>
-            <p>Grano entero tostado para moler fresco en cafeterias y hogares.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="catalog-band" id="catalogo">
+      <section class="catalog-section" id="catalogo">
         <div class="section">
-          <div class="section-heading">
-            <p class="section-kicker">Catalogo comercial</p>
-            <h2>Compra por necesidad, no por una presentacion fija.</h2>
+          <div class="section-heading centered">
+            <p class="section-kicker">Tienda</p>
+            <h2>Productos con lectura limpia y detalle premium.</h2>
+            <p>
+              Tarjetas minimalistas con imagen protagonista, sombras discretas y estados
+              hover pensados para revelar valor sin saturar la pantalla.
+            </p>
           </div>
 
-          <div class="catalog-tools" aria-label="Filtros de catalogo">
-            <button class="filter-btn is-active" type="button" data-filter="todos">
-              Todo
-            </button>
-            <button class="filter-btn" type="button" data-filter="empacado">
-              Empacado
-            </button>
-            <button class="filter-btn" type="button" data-filter="pepa">
-              En pepa
-            </button>
-            <button class="filter-btn" type="button" data-filter="molido">
-              Molido
-            </button>
-            <button class="filter-btn" type="button" data-filter="mayorista">
-              Mayorista
-            </button>
+          <div class="catalog-tools" aria-label="Filtros de producto">
+            <button class="filter-btn is-active" type="button" data-filter="todos">Todo</button>
+            <button class="filter-btn" type="button" data-filter="empacado">Empacado</button>
+            <button class="filter-btn" type="button" data-filter="grano">En grano</button>
+            <button class="filter-btn" type="button" data-filter="molido">Molido</button>
+            <button class="filter-btn" type="button" data-filter="mayorista">Mayorista</button>
           </div>
 
           <div class="product-grid">
             <article class="product-card" data-category="empacado">
-              <span class="product-tag">Reventa</span>
-              <h3>Marcas andinas empacadas</h3>
-              <p>
-                Bolsas selladas de 250 g, 500 g y 1 kg de marcas locales listas
-                para tiendas, bodegones y minimarkets.
-              </p>
-              <strong>Pedido mixto por marca</strong>
+              <img
+                src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&w=720&q=80"
+                alt="Bolsa de café premium"
+              />
+              <div>
+                <span class="product-tag">Reventa</span>
+                <h3>Empaque Kafé 250 g</h3>
+                <p>Presentación compacta para anaqueles, regalos corporativos y compra diaria.</p>
+                <strong>Notas: cacao, nuez y panela</strong>
+              </div>
             </article>
-            <article class="product-card" data-category="pepa">
-              <span class="product-tag">Fresco</span>
-              <h3>Cafe en pepa</h3>
-              <p>
-                Grano entero tostado para moler al momento. Disponible en
-                perfiles suaves, balanceados e intensos.
-              </p>
-              <strong>Ideal para molinos y barras</strong>
+
+            <article class="product-card" data-category="grano">
+              <img
+                src="assets/molido.png"
+                alt="Granos de café tostado"
+              />
+              <div>
+                <span class="product-tag">Barista</span>
+                <h3>Grano espresso 1 kg</h3>
+                <p>Tostado estable para barras de café, restaurantes y molinos de alto consumo.</p>
+                <strong>Cuerpo medio alto</strong>
+              </div>
             </article>
+
             <article class="product-card" data-category="molido">
-              <span class="product-tag">Operativo</span>
-              <h3>Cafe molido por metodo</h3>
-              <p>
-                Molienda ajustada para espresso, moka, filtro, prensa francesa
-                o preparacion tradicional.
-              </p>
-              <strong>Listo para produccion diaria</strong>
+              <img
+                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=720&q=80"
+                alt="Café molido junto a una taza"
+              />
+              <div>
+                <span class="product-tag">Diario</span>
+                <h3>Molido por método</h3>
+                <p>Molienda ajustada para espresso, filtro, prensa, moka o preparación tradicional.</p>
+                <strong>Listo para producción</strong>
+              </div>
             </article>
+
             <article class="product-card" data-category="mayorista">
-              <span class="product-tag">Mayorista</span>
-              <h3>Sacos y volumen</h3>
-              <p>
-                Compra por kilo o saco para restaurantes, distribuidores,
-                panaderias y clientes de alto consumo.
-              </p>
-              <strong>Precio por volumen</strong>
-            </article>
-            <article class="product-card" data-category="empacado">
-              <span class="product-tag">Gourmet</span>
-              <h3>Ediciones de finca</h3>
-              <p>
-                Lotes pequenos con historia de origen, ideales para regalos,
-                barras especiales y anaqueles premium.
-              </p>
-              <strong>Seleccion por temporada</strong>
-            </article>
-            <article class="product-card" data-category="pepa">
-              <span class="product-tag">Barista</span>
-              <h3>Grano para espresso</h3>
-              <p>
-                Cafe en pepa con tostado estable para maquinas espresso y
-                servicio continuo en cafeterias.
-              </p>
-              <strong>Perfil balanceado</strong>
-            </article>
-            <article class="product-card" data-category="molido">
-              <span class="product-tag">Tradicional</span>
-              <h3>Molido para colador</h3>
-              <p>
-                Molienda pensada para preparacion diaria en hogares, oficinas,
-                panaderias y puntos de venta.
-              </p>
-              <strong>Alta rotacion</strong>
-            </article>
-            <article class="product-card" data-category="mayorista">
-              <span class="product-tag">Institucional</span>
-              <h3>Consumo corporativo</h3>
-              <p>
-                Packs mensuales para oficinas, hoteles, salas de espera y
-                equipos con consumo recurrente.
-              </p>
-              <strong>Reposicion planificada</strong>
+              <img
+                src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=720&q=80"
+                alt="Sacos de café"
+              />
+              <div>
+                <span class="product-tag">Volumen</span>
+                <h3>Surtido mayorista</h3>
+                <p>Pedidos mixtos por kilo, caja o saco para distribuidores y compradores recurrentes.</p>
+                <strong>Cotización por ruta</strong>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section producers" id="productores">
-        <div class="section-heading">
-          <p class="section-kicker">Productores aliados</p>
-          <h2>Historias de origen que respaldan cada compra.</h2>
+      <section class="story section" id="historia">
+        <div class="story-image tall">
+          <img
+            src="https://images.unsplash.com/photo-1522992319-0365e5f11656?auto=format&fit=crop&w=900&q=82"
+            alt="Productor revisando plantas de café"
+          />
         </div>
-
-        <div class="producer-grid">
-          <article class="producer-card">
-            <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=400&q=80" alt="Finca cafetalera en Merida" style="width:100%;border-radius:8px;margin-bottom:0.5rem;"/>
-            <div>
-              <span>Merida</span>
-              <h3>Fincas de altura</h3>
-              <p>
-                Cafes aromaticos, acidez suave y perfiles limpios para marcas
-                de especialidad y consumo diario.
-              </p>
-            </div>
-          </article>
-          <article class="producer-card">
-            <img src="https://images.pexels.com/photos/2437299/pexels-photo-2437299.jpeg?auto=compress&w=400&q=80" alt="Caficultores en Tachira" style="width:100%;border-radius:8px;margin-bottom:0.5rem;"/>
-            <div>
-              <span>Tachira</span>
-              <h3>Sembradores familiares</h3>
-              <p>
-                Lotes consistentes con tostados medios e intensos para venta al
-                mayor, tiendas y cafeterias.
-              </p>
-            </div>
-          </article>
-          <article class="producer-card">
-            <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" alt="Cosecha de cafe en Trujillo" style="width:100%;border-radius:8px;margin-bottom:0.5rem;"/>
-            <div>
-              <span>Trujillo</span>
-              <h3>Tradicion cafetalera</h3>
-              <p>
-                Cafe de cuerpo marcado, buen rendimiento y formatos flexibles
-                para consumo recurrente.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="brand-showcase" aria-label="Marcas representadas">
-        <div class="section brand-content">
-          <div>
-            <p class="section-kicker">Marcas y sembradores</p>
-            <h2>Un mismo pedido puede reunir varias marcas andinas.</h2>
-          </div>
-          <div class="brand-rail">
-            <span>Finca El Paramito</span>
-            <span>Cafe Montana Viva</span>
-            <span>Andes Tostado</span>
-            <span>La Cordillera</span>
-            <span>Grano Tachirense</span>
-            <span>Origen Trujillo</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="mayoristas">
-        <div class="section-heading">
-          <p class="section-kicker">Abastecimiento</p>
-          <h2>Un proceso claro para comprar cafe andino sin complicarte.</h2>
-        </div>
-
-        <div class="process-grid">
-          <article>
-            <span>1</span>
-            <h3>Define formato</h3>
-            <p>Escoge empacado, molido o en pepa segun el uso de tu negocio.</p>
-          </article>
-          <article>
-            <span>2</span>
-            <h3>Armamos surtido</h3>
-            <p>Combinamos marcas, zonas, perfiles y cantidades segun rotacion.</p>
-          </article>
-          <article>
-            <span>3</span>
-            <h3>Coordinamos entrega</h3>
-            <p>Preparamos cotizacion, disponibilidad y ruta de despacho local.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section wholesale">
-        <div class="section-heading">
-          <p class="section-kicker">Presentaciones</p>
-          <h2>Tabla rapida para explicar formatos y clientes ideales.</h2>
-        </div>
-
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Presentacion</th>
-                <th>Formato</th>
-                <th>Cliente ideal</th>
-                <th>Uso recomendado</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>250 g / 500 g</td>
-                <td>Empacado</td>
-                <td>Tiendas y bodegones</td>
-                <td>Reventa por marca y origen</td>
-              </tr>
-              <tr>
-                <td>1 kg</td>
-                <td>Molido o en pepa</td>
-                <td>Cafeterias y oficinas</td>
-                <td>Consumo semanal controlado</td>
-              </tr>
-              <tr>
-                <td>5 kg</td>
-                <td>Grano entero</td>
-                <td>Restaurantes y barras</td>
-                <td>Molienda fresca por turno</td>
-              </tr>
-              <tr>
-                <td>Saco</td>
-                <td>Mayorista</td>
-                <td>Distribuidores</td>
-                <td>Compra por volumen y reposicion</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="service-band">
-        <div class="section service-content">
-          <div>
-            <p class="section-kicker">Para quien vendemos</p>
-            <h2>Distribucion pensada para compradores frecuentes.</h2>
-          </div>
-          <div class="service-list">
-            <div>
-              <span>Tiendas</span>
-              <p>Inventario variado de marcas locales para anaquel.</p>
-            </div>
-            <div>
-              <span>Cafeterias</span>
-              <p>Cafe en pepa y molido con reposicion constante.</p>
-            </div>
-            <div>
-              <span>Oficinas</span>
-              <p>Packs de consumo mensual para equipos y salas de espera.</p>
-            </div>
-            <div>
-              <span>Mayoristas</span>
-              <p>Compras por volumen con seleccion de origen y presentacion.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section coverage">
-        <div>
-          <p class="section-kicker">Cobertura</p>
-          <h2>Rutas locales y despachos coordinados para compradores frecuentes.</h2>
+        <div class="story-copy">
+          <p class="section-kicker">Historia de marca</p>
+          <h2>Del paisaje andino a una experiencia comercial más serena.</h2>
           <p>
-            La cobertura puede adaptarse por zona, volumen y frecuencia. Para la
-            clase, esta seccion ayuda a explicar como la distribuidora organiza
-            la logistica y no solo vende producto.
+            Kafé C.A. se presenta como una compañía que entiende la tradición cafetera
+            desde el detalle: origen, tostado, empaque, logística y una comunicación
+            visual que deja respirar al producto.
           </p>
         </div>
-        <div class="coverage-map" aria-label="Cobertura comercial">
-          <span class="pin pin-one">Merida</span>
-          <span class="pin pin-two">Tachira</span>
-          <span class="pin pin-three">Trujillo</span>
-          <span class="route route-one"></span>
-          <span class="route route-two"></span>
+        <div class="story-note">
+          <strong>La idea</strong>
+          <p>
+            La idea de emprender con Café C.A. nació entre charlas universitarias y tazas de café, cuando un grupo de jóvenes apasionados por la tecnología y la ingeniería decidió volcar su ingenio hacia las raíces de su tierra. Motivados por el deseo de digitalizar y revalorizar el esfuerzo de la caficultura de altura, decidieron combinar sus conocimientos técnicos con la riqueza del grano andino.
+          </p>
+        </div>
+        <div class="story-image wide">
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=82"
+            alt="Taza de café servida sobre una mesa minimalista"
+          />
         </div>
       </section>
 
-      <section class="section testimonials">
-        <div class="section-heading">
-          <p class="section-kicker">Confianza comercial</p>
-          <h2>Ejemplos de clientes que puede atender la distribuidora.</h2>
-        </div>
-
-        <div class="testimonial-grid">
-          <article>
-            <p>
-              "Nos permite comprar cafe en pepa y molerlo al momento sin
-              depender de un solo proveedor."
-            </p>
-            <strong>Cafeteria local</strong>
-          </article>
-          <article>
-            <p>
-              "El pedido mixto nos ayuda a vender distintas marcas andinas en
-              el mismo anaquel."
-            </p>
-            <strong>Bodegon aliado</strong>
-          </article>
-          <article>
-            <p>
-              "La reposicion programada simplifica el consumo mensual del
-              equipo."
-            </p>
-            <strong>Oficina corporativa</strong>
-          </article>
-        </div>
-      </section>
-
-      <section class="faq-band">
-        <div class="section faq">
+      <section class="wholesale-band" id="mayoristas">
+        <div class="section wholesale-content">
           <div>
-            <p class="section-kicker">Preguntas frecuentes</p>
-            <h2>Informacion clave antes de cotizar.</h2>
+            <p class="section-kicker">Mayoristas</p>
+            <h2>Abastecimiento claro para negocios que compran con frecuencia.</h2>
           </div>
-          <div class="faq-list">
-            <details open>
-              <summary>¿Venden cafe en pepa para moler?</summary>
-              <p>
-                Si. El cafe en pepa es uno de los formatos principales para
-                cafeterias, molinos y clientes que prefieren moler fresco.
-              </p>
-            </details>
-            <details>
-              <summary>¿Puedo comprar varias marcas en un solo pedido?</summary>
-              <p>
-                Si. La idea de la distribuidora es reunir marcas y sembradores
-                andinos para facilitar pedidos mixtos.
-              </p>
-            </details>
-            <details>
-              <summary>¿Trabajan al detal o al mayor?</summary>
-              <p>
-                La pagina esta pensada para pedidos comerciales, pero puede
-                adaptarse a compras pequenas, recurrentes o mayoristas.
-              </p>
-            </details>
+          <div class="process-grid">
+            <article>
+              <span>01</span>
+              <h3>Selecciona formato</h3>
+              <p>Empacado, molido o en grano según el flujo real de tu negocio.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Armamos surtido</h3>
+              <p>Combinamos perfiles, cantidades y presentaciones para tu rotación.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Coordinamos entrega</h3>
+              <p>Preparamos disponibilidad, precio y ruta comercial con seguimiento.</p>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="section contact" id="contacto">
-        <div>
-          <p class="section-kicker">Contacto comercial</p>
-          <h2>Solicita disponibilidad y precios del catalogo andino.</h2>
+        <div class="contact-copy">
+          <p class="section-kicker">Contacto</p>
+          <h2>Conversemos sobre tu próximo pedido.</h2>
           <p>
-            Indica si buscas cafe empacado, cafe elaborado o cafe en pepa para
-            moler. Con esa informacion podemos responder con una propuesta mas
-            precisa.
+            Indica formato, cantidad estimada y ciudad. El formulario prepara un mensaje
+            directo para WhatsApp con los datos necesarios para cotizar.
           </p>
-          <div class="contact-note">
-            <strong>Atencion local</strong>
-            <span>Pedidos para comercios, oficinas y compradores al mayor.</span>
-          </div>
         </div>
 
         <form class="contact-form">
@@ -510,26 +267,21 @@
             <input type="text" name="negocio" placeholder="Nombre del negocio" />
           </label>
           <label>
-            Producto de interes
+            Producto de interés
             <select name="producto" required>
-              <option value="">Selecciona una opcion</option>
-              <option>Cafe empacado</option>
-              <option>Cafe molido elaborado</option>
-              <option>Cafe en pepa para moler</option>
-              <option>Pedido mixto</option>
+              <option value="">Selecciona una opción</option>
+              <option>Café empacado</option>
+              <option>Café molido</option>
+              <option>Café en grano</option>
+              <option>Pedido mayorista mixto</option>
             </select>
           </label>
           <label>
             Cantidad estimada
-            <input
-              type="text"
-              name="cantidad"
-              placeholder="Ej: 10 kg, 50 bolsas, 1 saco"
-              required
-            />
+            <input type="text" name="cantidad" placeholder="Ej: 10 kg, 50 bolsas, 1 saco" required />
           </label>
           <label>
-            Telefono o WhatsApp
+            WhatsApp
             <input type="tel" name="telefono" placeholder="+58 000 0000000" required />
           </label>
           <label>
@@ -537,7 +289,7 @@
             <textarea
               name="mensaje"
               rows="4"
-              placeholder="Cuentanos ciudad, frecuencia de compra y preferencias."
+              placeholder="Ciudad, frecuencia de compra y preferencias."
               required
             ></textarea>
           </label>
@@ -548,13 +300,13 @@
     </main>
 
     <footer class="site-footer">
-      <p>KAFÉ c.a.</p>
-      <p>Café venezolano premium, tradición y modernidad</p>
+      <img src="assets/imagenes/logo/kafe-logo-dark.svg" alt="Kafé C.A." />
+      <p>Café venezolano premium, tradición andina y presencia moderna.</p>
     </footer>
 
     <a
       class="floating-whatsapp"
-      href="https://wa.me/580000000000?text=Hola,%20quiero%20cotizar%20cafe%20andino."
+      href="https://wa.me/580000000000?text=Hola,%20quiero%20cotizar%20caf%C3%A9%20Kaf%C3%A9."
       target="_blank"
       rel="noopener"
       aria-label="Contactar por WhatsApp"
