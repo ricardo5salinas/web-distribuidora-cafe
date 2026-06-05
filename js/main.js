@@ -6,28 +6,29 @@ const statusMessage = document.querySelector(".form-status");
 const filterButtons = document.querySelectorAll(".filter-btn");
 const productCards = document.querySelectorAll(".product-card");
 const revealItems = document.querySelectorAll(
-  ".section-heading, .product-card, .producer-card, .process-grid article, .testimonial-grid article, .feature-board div, .metric, .contact-form, .coverage-map"
+  ".section-heading, .intro > *, .metrics-strip article, .product-card, .story > *, .process-grid article, .contact > *"
 );
 
 const whatsappNumber = "580000000000";
 
 function updateHeader() {
-  header.classList.toggle("is-scrolled", window.scrollY > 12);
+  header.classList.toggle("is-scrolled", window.scrollY > 16);
 }
 
 function closeMenu() {
   header.classList.remove("is-open");
   document.body.classList.remove("nav-open");
+  navToggle.setAttribute("aria-expanded", "false");
 }
 
 navToggle.addEventListener("click", () => {
-  header.classList.toggle("is-open");
-  document.body.classList.toggle("nav-open");
+  const isOpen = header.classList.toggle("is-open");
+  document.body.classList.toggle("nav-open", isOpen);
+  navToggle.setAttribute("aria-expanded", String(isOpen));
 });
 
 document.addEventListener("click", (event) => {
-  const clickedInsideHeader = header.contains(event.target);
-  if (!clickedInsideHeader) {
+  if (!header.contains(event.target)) {
     closeMenu();
   }
 });
@@ -62,12 +63,12 @@ form.addEventListener("submit", (event) => {
   const mensaje = formData.get("mensaje");
 
   const text = [
-    "Hola, quiero cotizar cafe andino.",
+    "Hola, quiero cotizar café Kafé.",
     `Nombre: ${nombre}`,
     `Negocio: ${negocio}`,
     `Producto: ${producto}`,
     `Cantidad estimada: ${cantidad}`,
-    `Telefono: ${telefono}`,
+    `WhatsApp: ${telefono}`,
     `Mensaje: ${mensaje}`,
   ].join("\n");
 
@@ -91,7 +92,7 @@ if ("IntersectionObserver" in window) {
         }
       });
     },
-    { threshold: 0.16 }
+    { threshold: 0.14, rootMargin: "0px 0px -60px 0px" }
   );
 
   revealItems.forEach((item) => observer.observe(item));
