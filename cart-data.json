@@ -1,0 +1,24 @@
+[
+  {
+    "id": "empacado-250g",
+    "name": "Empaque Kafé 250 g",
+    "price": 18500,
+    "category": "empacado",
+    "classification": "gourmet",
+    "brand": "Kafé C.A.",
+    "producer": "Productores Andinos",
+    "image": "https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&w=720&q=80",
+    "quantity": 1
+  },
+  {
+    "id": "mayorista-10kg",
+    "name": "Surtido mayorista 10 kg",
+    "price": 650000,
+    "category": "mayorista",
+    "classification": "mayorista",
+    "brand": "Kafé C.A.",
+    "producer": "Productores Andinos",
+    "image": "https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=720&q=80",
+    "quantity": 1
+  }
+]

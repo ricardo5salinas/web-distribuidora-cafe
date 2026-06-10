@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Procesar compra | Kafé C.A.</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img
+          src="assets/imagenes/logo/OPC_2.png"
+          alt="Kafé C.A."
+          class="brand-mark"
+        />
+        <span class="brand-copy">
+          <strong>Kafé C.A.</strong>
+          <small>Café andino</small>
+        </span>
+      </a>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-heading centered">
+          <p class="section-kicker">Finalizar compra</p>
+          <h2>Datos de envío y pago</h2>
+          <p>Completa la información para procesar tu pedido.</p>
+        </div>
+
+        <div class="checkout-grid">
+          <form id="checkout-form" class="checkout-form">
+            <label>
+              Nombre completo
+              <input type="text" name="nombre" required />
+            </label>
+            <label>
+              Teléfono (WhatsApp)
+              <input type="tel" name="telefono" required />
+            </label>
+            <label>
+              Dirección de entrega
+              <input type="text" name="direccion" required />
+            </label>
+            <label>
+              Ciudad
+              <input type="text" name="ciudad" required />
+            </label>
+            <label>
+              Código postal
+              <input type="text" name="postal" />
+            </label>
+
+            <fieldset>
+              <legend>Método de pago</legend>
+              <label
+                ><input type="radio" name="pago" value="tarjeta" checked />
+                Tarjeta</label
+              >
+              <label
+                ><input type="radio" name="pago" value="movil" /> Pago
+                móvil</label
+              >
+              <label
+                ><input type="radio" name="pago" value="transferencia" />
+                Transferencia</label
+              >
+            </fieldset>
+
+            <div class="checkout-actions">
+              <button
+                class="btn btn-primary"
+                id="checkout-submit"
+                type="submit"
+              >
+                Continuar a pasarela de pago
+              </button>
+              <a class="btn btn-ghost" href="carrito.html">Volver</a>
+            </div>
+          </form>
+
+          <aside class="checkout-summary">
+            <h3>Resumen del pedido</h3>
+            <div id="checkout-items" class="checkout-items"></div>
+            <div class="checkout-total">
+              <span>Total estimado</span>
+              <strong id="checkout-total">Bs 0</strong>
+            </div>
+            <div id="payment-instructions" class="payment-instructions">
+              <div id="movil-instructions" class="hidden"></div>
+              <div id="transferencia-instructions" class="hidden"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="assets/imagenes/logo/kafe-logo-dark.svg" alt="Kafé C.A." />
+    </footer>
+
+    <script src="js/checkout.js"></script>
+  </body>
+</html>

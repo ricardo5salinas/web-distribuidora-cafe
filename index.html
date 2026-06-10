@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -30,17 +30,25 @@
         </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
         <span></span>
         <span></span>
       </button>
 
       <nav class="site-nav" aria-label="Principal">
         <a href="#origen">Origen</a>
-        <a href="#catalogo">Tienda</a>
+        <a href="tienda.html">Tienda</a>
         <a href="#historia">Historia</a>
         <a href="#mayoristas">Mayoristas</a>
         <a href="#contacto">Contacto</a>
+        <a href="carrito.html" class="cart-link"
+          >Carrito <span class="cart-count" aria-live="polite">0</span></a
+        >
       </nav>
     </header>
 
@@ -57,22 +65,99 @@
             <p class="eyebrow">Café venezolano premium</p>
             <h1>Origen andino, presencia contemporánea.</h1>
             <p>
-              Kafé C.A. selecciona, tuesta y distribuye café de los Andes venezolanos
-              con una mirada limpia, artesanal y lista para negocios que cuidan cada taza.
+              Kafé C.A. selecciona, tuesta y distribuye café de los Andes
+              venezolanos con una mirada limpia, artesanal y lista para negocios
+              que cuidan cada taza.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#catalogo">Explorar catálogo</a>
+              <a class="btn btn-primary" href="tienda.html"
+                >Explorar catálogo</a
+              >
               <a class="btn btn-ghost" href="#contacto">Solicitar cotización</a>
             </div>
           </div>
 
           <aside class="hero-card" aria-label="Formatos destacados">
-            <img src="assets/hero-cafe.png" alt="Empaques Kafé con paisaje andino" />
+            <img
+              src="assets/hero-cafe.png"
+              alt="Empaques Kafé con paisaje andino"
+            />
             <div>
               <span>Molido · Grano · Gourmet</span>
-              <strong>Tostado con perfil balanceado y empaque listo para venta.</strong>
+              <strong
+                >Tostado con perfil balanceado y empaque listo para
+                venta.</strong
+              >
             </div>
           </aside>
+        </div>
+      </section>
+
+      <section
+        class="product-preview section"
+        aria-label="Tipos de productos destacados"
+      >
+        <div class="section-heading centered">
+          <p class="section-kicker">Colección</p>
+          <h2>Encuentra tu formato ideal desde el primer vistazo.</h2>
+          <p>
+            Tarjetas de producto al estilo tienda, mostrando categorías y tipos
+            de café directamente al ingresar.
+          </p>
+        </div>
+
+        <div class="product-preview-grid">
+          <button class="category-card" type="button" data-filter="empacado">
+            <div class="category-media">
+              <img
+                src="https://images.unsplash.com/photo-1566837122657-3f3e8afe9566?auto=format&fit=crop&w=720&q=80"
+                alt="Café empacado listo para venta"
+              />
+            </div>
+            <div class="category-content">
+              <strong>Empacado</strong>
+              <span>Presentación lista para exhibir y revender.</span>
+            </div>
+          </button>
+
+          <button class="category-card" type="button" data-filter="grano">
+            <div class="category-media">
+              <img
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=720&q=80"
+                alt="Granos de café tostado"
+              />
+            </div>
+            <div class="category-content">
+              <strong>En grano</strong>
+              <span>Perfila tu tueste con molienda propia.</span>
+            </div>
+          </button>
+
+          <button class="category-card" type="button" data-filter="molido">
+            <div class="category-media">
+              <img
+                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=720&q=80"
+                alt="Café molido acompañado de una taza"
+              />
+            </div>
+            <div class="category-content">
+              <strong>Molido</strong>
+              <span>Moliendas preparadas para espresso y filtro.</span>
+            </div>
+          </button>
+
+          <button class="category-card" type="button" data-filter="mayorista">
+            <div class="category-media">
+              <img
+                src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=720&q=80"
+                alt="Sacos de café para mayoristas"
+              />
+            </div>
+            <div class="category-content">
+              <strong>Mayorista</strong>
+              <span>Volúmenes y combos pensados para negocios grandes.</span>
+            </div>
+          </button>
         </div>
       </section>
 
@@ -83,14 +168,15 @@
         </div>
         <div class="intro-copy">
           <p>
-            La esencia del café andino está en las alturas. Cultivado a más de 1,500
-            metros entre la niebla y suelos ricos de la cordillera, sus granos maduran
-            lentamente, concentrando azúcares y nutrientes únicos.
+            La esencia del café andino está en las alturas. Cultivado a más de
+            1,500 metros entre la niebla y suelos ricos de la cordillera, sus
+            granos maduran lentamente, concentrando azúcares y nutrientes
+            únicos.
           </p>
           <p>
-            Su equilibrio combina una acidez brillante y limpia con notas cítricas,
-            dulzor natural a chocolate y panela, y una taza sedosa con el carácter
-            de la montaña.
+            Su equilibrio combina una acidez brillante y limpia con notas
+            cítricas, dulzor natural a chocolate y panela, y una taza sedosa con
+            el carácter de la montaña.
           </p>
           <div class="origin-list">
             <span>Mérida</span>
@@ -104,15 +190,23 @@
       <section class="metrics-strip" aria-label="Indicadores de Kafé C.A.">
         <article>
           <span>03</span>
-          <p>estados andinos como inspiración de origen y narrativa comercial.</p>
+          <p>
+            estados andinos como inspiración de origen y narrativa comercial.
+          </p>
         </article>
         <article>
           <span>24+</span>
-          <p>referencias flexibles entre café molido, en grano y presentaciones gourmet.</p>
+          <p>
+            referencias flexibles entre café molido, en grano y presentaciones
+            gourmet.
+          </p>
         </article>
         <article>
           <span>100%</span>
-          <p>enfoque venezolano para abastecimiento local y compradores frecuentes.</p>
+          <p>
+            enfoque venezolano para abastecimiento local y compradores
+            frecuentes.
+          </p>
         </article>
       </section>
 
@@ -122,21 +216,43 @@
             <p class="section-kicker">Tienda</p>
             <h2>Productos con lectura limpia y detalle premium.</h2>
             <p>
-              Tarjetas minimalistas con imagen protagonista, sombras discretas y estados
-              hover pensados para revelar valor sin saturar la pantalla.
+              Tarjetas minimalistas con imagen protagonista, sombras discretas y
+              estados hover pensados para revelar valor sin saturar la pantalla.
             </p>
           </div>
 
           <div class="catalog-tools" aria-label="Filtros de producto">
-            <button class="filter-btn is-active" type="button" data-filter="todos">Todo</button>
-            <button class="filter-btn" type="button" data-filter="empacado">Empacado</button>
-            <button class="filter-btn" type="button" data-filter="grano">En grano</button>
-            <button class="filter-btn" type="button" data-filter="molido">Molido</button>
-            <button class="filter-btn" type="button" data-filter="mayorista">Mayorista</button>
+            <button
+              class="filter-btn is-active"
+              type="button"
+              data-filter="todos"
+            >
+              Todo
+            </button>
+            <button class="filter-btn" type="button" data-filter="empacado">
+              Empacado
+            </button>
+            <button class="filter-btn" type="button" data-filter="grano">
+              En grano
+            </button>
+            <button class="filter-btn" type="button" data-filter="molido">
+              Molido
+            </button>
+            <button class="filter-btn" type="button" data-filter="mayorista">
+              Mayorista
+            </button>
           </div>
 
           <div class="product-grid">
-            <article class="product-card" data-category="empacado">
+            <article
+              class="product-card"
+              data-category="empacado"
+              data-id="empacado-250g"
+              data-name="Empaque Kafé 250 g"
+              data-price="18500"
+              data-brand="Kafé C.A."
+              data-producer="Productores Andinos"
+            >
               <img
                 src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&w=720&q=80"
                 alt="Bolsa de café premium"
@@ -144,47 +260,116 @@
               <div>
                 <span class="product-tag">Reventa</span>
                 <h3>Empaque Kafé 250 g</h3>
-                <p>Presentación compacta para anaqueles, regalos corporativos y compra diaria.</p>
-                <strong>Notas: cacao, nuez y panela</strong>
+                <p>
+                  Presentación compacta para anaqueles, regalos corporativos y
+                  compra diaria.
+                </p>
+                <div class="product-card-info">
+                  <span class="product-brand">Marca: Kafé C.A.</span>
+                  <span class="product-producer">Productor: Andes Café</span>
+                </div>
+                <div class="product-card-meta">
+                  <strong>Bs 18.500</strong>
+                  <button class="btn btn-primary add-to-cart" type="button">
+                    Agregar al carrito
+                  </button>
+                </div>
               </div>
             </article>
 
-            <article class="product-card" data-category="grano">
-              <img
-                src="assets/molido.png"
-                alt="Granos de café tostado"
-              />
+            <article
+              class="product-card"
+              data-category="grano"
+              data-id="grano-1kg"
+              data-name="Grano espresso 1 kg"
+              data-price="68000"
+              data-brand="Kafé C.A."
+              data-producer="Productores Andinos"
+            >
+              <img src="assets/molido.png" alt="Granos de café tostado" />
               <div>
                 <span class="product-tag">Barista</span>
                 <h3>Grano espresso 1 kg</h3>
-                <p>Tostado estable para barras de café, restaurantes y molinos de alto consumo.</p>
-                <strong>Cuerpo medio alto</strong>
+                <p>
+                  Tostado estable para barras de café, restaurantes y molinos de
+                  alto consumo.
+                </p>
+                <div class="product-card-info">
+                  <span class="product-brand">Marca: Kafé C.A.</span>
+                  <span class="product-producer">Productor: Andes Café</span>
+                </div>
+                <div class="product-card-meta">
+                  <strong>Bs 68.000</strong>
+                  <button class="btn btn-primary add-to-cart" type="button">
+                    Agregar al carrito
+                  </button>
+                </div>
               </div>
             </article>
 
-            <article class="product-card" data-category="molido">
+            <article
+              class="product-card"
+              data-category="molido"
+              data-id="molido-500g"
+              data-name="Molido por método 500 g"
+              data-price="32000"
+              data-brand="Kafé C.A."
+              data-producer="Productores Andinos"
+            >
               <img
                 src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=720&q=80"
                 alt="Café molido junto a una taza"
               />
               <div>
                 <span class="product-tag">Diario</span>
-                <h3>Molido por método</h3>
-                <p>Molienda ajustada para espresso, filtro, prensa, moka o preparación tradicional.</p>
-                <strong>Listo para producción</strong>
+                <h3>Molido por método 500 g</h3>
+                <p>
+                  Molienda ajustada para espresso, filtro, prensa, moka o
+                  preparación tradicional.
+                </p>
+                <div class="product-card-info">
+                  <span class="product-brand">Marca: Kafé C.A.</span>
+                  <span class="product-producer">Productor: Andes Café</span>
+                </div>
+                <div class="product-card-meta">
+                  <strong>Bs 32.000</strong>
+                  <button class="btn btn-primary add-to-cart" type="button">
+                    Agregar al carrito
+                  </button>
+                </div>
               </div>
             </article>
 
-            <article class="product-card" data-category="mayorista">
+            <article
+              class="product-card"
+              data-category="mayorista"
+              data-id="mayorista-10kg"
+              data-name="Surtido mayorista 10 kg"
+              data-price="650000"
+              data-brand="Kafé C.A."
+              data-producer="Productores Andinos"
+            >
               <img
                 src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=720&q=80"
                 alt="Sacos de café"
               />
               <div>
                 <span class="product-tag">Volumen</span>
-                <h3>Surtido mayorista</h3>
-                <p>Pedidos mixtos por kilo, caja o saco para distribuidores y compradores recurrentes.</p>
-                <strong>Cotización por ruta</strong>
+                <h3>Surtido mayorista 10 kg</h3>
+                <p>
+                  Pedidos mixtos por kilo, caja o saco para distribuidores y
+                  compradores recurrentes.
+                </p>
+                <div class="product-card-info">
+                  <span class="product-brand">Marca: Kafé C.A.</span>
+                  <span class="product-producer">Productor: Andes Café</span>
+                </div>
+                <div class="product-card-meta">
+                  <strong>Bs 650.000</strong>
+                  <button class="btn btn-primary add-to-cart" type="button">
+                    Agregar al carrito
+                  </button>
+                </div>
               </div>
             </article>
           </div>
@@ -202,15 +387,21 @@
           <p class="section-kicker">Historia de marca</p>
           <h2>Del paisaje andino a una experiencia comercial más serena.</h2>
           <p>
-            Kafé C.A. se presenta como una compañía que entiende la tradición cafetera
-            desde el detalle: origen, tostado, empaque, logística y una comunicación
-            visual que deja respirar al producto.
+            Kafé C.A. se presenta como una compañía que entiende la tradición
+            cafetera desde el detalle: origen, tostado, empaque, logística y una
+            comunicación visual que deja respirar al producto.
           </p>
         </div>
         <div class="story-note">
           <strong>La idea</strong>
           <p>
-            La idea de emprender con Café C.A. nació entre charlas universitarias y tazas de café, cuando un grupo de jóvenes apasionados por la tecnología y la ingeniería decidió volcar su ingenio hacia las raíces de su tierra. Motivados por el deseo de digitalizar y revalorizar el esfuerzo de la caficultura de altura, decidieron combinar sus conocimientos técnicos con la riqueza del grano andino.
+            La idea de emprender con Café C.A. nació entre charlas
+            universitarias y tazas de café, cuando un grupo de jóvenes
+            apasionados por la tecnología y la ingeniería decidió volcar su
+            ingenio hacia las raíces de su tierra. Motivados por el deseo de
+            digitalizar y revalorizar el esfuerzo de la caficultura de altura,
+            decidieron combinar sus conocimientos técnicos con la riqueza del
+            grano andino.
           </p>
         </div>
         <div class="story-image wide">
@@ -225,23 +416,33 @@
         <div class="section wholesale-content">
           <div>
             <p class="section-kicker">Mayoristas</p>
-            <h2>Abastecimiento claro para negocios que compran con frecuencia.</h2>
+            <h2>
+              Abastecimiento claro para negocios que compran con frecuencia.
+            </h2>
           </div>
           <div class="process-grid">
             <article>
               <span>01</span>
               <h3>Selecciona formato</h3>
-              <p>Empacado, molido o en grano según el flujo real de tu negocio.</p>
+              <p>
+                Empacado, molido o en grano según el flujo real de tu negocio.
+              </p>
             </article>
             <article>
               <span>02</span>
               <h3>Armamos surtido</h3>
-              <p>Combinamos perfiles, cantidades y presentaciones para tu rotación.</p>
+              <p>
+                Combinamos perfiles, cantidades y presentaciones para tu
+                rotación.
+              </p>
             </article>
             <article>
               <span>03</span>
               <h3>Coordinamos entrega</h3>
-              <p>Preparamos disponibilidad, precio y ruta comercial con seguimiento.</p>
+              <p>
+                Preparamos disponibilidad, precio y ruta comercial con
+                seguimiento.
+              </p>
             </article>
           </div>
         </div>
@@ -252,8 +453,8 @@
           <p class="section-kicker">Contacto</p>
           <h2>Conversemos sobre tu próximo pedido.</h2>
           <p>
-            Indica formato, cantidad estimada y ciudad. El formulario prepara un mensaje
-            directo para WhatsApp con los datos necesarios para cotizar.
+            Indica formato, cantidad estimada y ciudad. El formulario prepara un
+            mensaje directo para WhatsApp con los datos necesarios para cotizar.
           </p>
         </div>
 
@@ -264,7 +465,11 @@
           </label>
           <label>
             Negocio
-            <input type="text" name="negocio" placeholder="Nombre del negocio" />
+            <input
+              type="text"
+              name="negocio"
+              placeholder="Nombre del negocio"
+            />
           </label>
           <label>
             Producto de interés
@@ -278,11 +483,21 @@
           </label>
           <label>
             Cantidad estimada
-            <input type="text" name="cantidad" placeholder="Ej: 10 kg, 50 bolsas, 1 saco" required />
+            <input
+              type="text"
+              name="cantidad"
+              placeholder="Ej: 10 kg, 50 bolsas, 1 saco"
+              required
+            />
           </label>
           <label>
             WhatsApp
-            <input type="tel" name="telefono" placeholder="+58 000 0000000" required />
+            <input
+              type="tel"
+              name="telefono"
+              placeholder="+58 000 0000000"
+              required
+            />
           </label>
           <label>
             Mensaje
@@ -293,7 +508,9 @@
               required
             ></textarea>
           </label>
-          <button class="btn btn-primary" type="submit">Preparar mensaje</button>
+          <button class="btn btn-primary" type="submit">
+            Preparar mensaje
+          </button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </section>
@@ -315,5 +532,6 @@
     </a>
 
     <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
   </body>
 </html>

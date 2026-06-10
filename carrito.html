@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Carrito de compras de Kafé C.A., administra tus productos seleccionados, ajusta cantidades y envía tu pedido."
+    />
+    <title>Carrito | Kafé C.A.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img
+          src="assets/imagenes/logo/OPC_2.png"
+          alt="Kafé C.A."
+          class="brand-mark"
+        />
+        <span class="brand-copy">
+          <strong>Kafé C.A.</strong>
+          <small>Café andino</small>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Principal">
+        <a href="index.html#origen">Origen</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="index.html#historia">Historia</a>
+        <a href="index.html#mayoristas">Mayoristas</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="carrito.html" class="cart-link">Carrito</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section cart-section">
+        <div class="section-heading centered">
+          <p class="section-kicker">Carrito</p>
+          <h2>Tu carrito de compras</h2>
+          <p>
+            Revisa los productos seleccionados y ajusta las cantidades antes del
+            pago.
+          </p>
+        </div>
+
+        <div class="cart-page">
+          <div class="cart-main">
+            <div class="cart-items-list" id="cart-items-list"></div>
+            <div class="cart-empty-state" id="cart-empty-state">
+              Tu carrito está vacío. Ve a la tienda para agregar productos.
+            </div>
+          </div>
+
+          <aside class="cart-summary-panel">
+            <div class="cart-summary-row">
+              <span>Artículos</span>
+              <strong id="cart-count">0</strong>
+            </div>
+            <div class="cart-summary-row">
+              <span>Subtotal</span>
+              <strong id="cart-subtotal">Bs 0</strong>
+            </div>
+            <div class="cart-summary-row notes">
+              Ajusta cantidades, elimina productos o continúa a checkout.
+            </div>
+            <div class="cart-actions">
+              <button
+                class="btn btn-primary cart-checkout"
+                id="cart-checkout"
+                type="button"
+              >
+                Procesar compra
+              </button>
+              <button
+                class="btn btn-ghost cart-clear"
+                id="cart-clear"
+                type="button"
+              >
+                Vaciar carrito
+              </button>
+              <a class="btn btn-ghost" href="tienda.html">Volver a la tienda</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="assets/imagenes/logo/kafe-logo-dark.svg" alt="Kafé C.A." />
+      <p>Café venezolano premium, tradición andina y presencia moderna.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>

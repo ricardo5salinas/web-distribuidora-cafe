@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasarela de pago | Kafé C.A.</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img
+          src="assets/imagenes/logo/OPC_2.png"
+          alt="Kafé C.A."
+          class="brand-mark"
+        />
+        <span class="brand-copy">
+          <strong>Kafé C.A.</strong>
+          <small>Café andino</small>
+        </span>
+      </a>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-heading centered">
+          <p class="section-kicker">Pasarela de pago</p>
+          <h2>Simulación de pago</h2>
+          <p>Aquí termina el flujo de pago antes de la pasarela real.</p>
+        </div>
+
+        <div class="checkout-grid">
+          <div class="checkout-summary full-width">
+            <h3>Detalles de pago</h3>
+            <div id="payment-details" class="checkout-items"></div>
+            <div class="checkout-total">
+              <span>Total a pagar</span>
+              <strong id="payment-total">Bs 0</strong>
+            </div>
+            <div id="payment-method" class="payment-instructions"></div>
+            <div class="checkout-actions">
+              <a class="btn btn-primary" href="carrito.html"
+                >Volver al carrito</a
+              >
+              <button class="btn btn-ghost" id="confirm-payment" type="button">
+                Confirmar pago simulado
+              </button>
+            </div>
+            <div id="payment-status" class="payment-status"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="assets/imagenes/logo/kafe-logo-dark.svg" alt="Kafé C.A." />
+    </footer>
+
+    <script src="js/pasarela.js"></script>
+  </body>
+</html>

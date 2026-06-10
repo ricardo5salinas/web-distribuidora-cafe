@@ -1,0 +1,585 @@
+{
+  "faqs": [
+    {
+      "id": "origin",
+      "questions": [
+        "de donde extraen el cafe",
+        "origen del cafe",
+        "de donde viene el cafe",
+        "donde se cultiva el cafe",
+        "cual es el origen",
+        "de que pais es el cafe",
+        "procedencia del cafe",
+        "granos venezolanos",
+        "cafes de venezuela"
+      ],
+      "keywords": [
+        "origen",
+        "extraen",
+        "de donde",
+        "venezolano",
+        "andino",
+        "fincas",
+        "cultivo",
+        "procedencia"
+      ],
+      "answer": "Nuestro cafe viene de los Andes venezolanos, con referencias a Merida, Tachira y Trujillo. Es un cafe de altura, tostado para ofrecer equilibrio entre aroma, dulzor y acidez limpia. Seleccionamos granos premium de fincas con tradicion cafetera."
+    },
+    {
+      "id": "altitude",
+      "questions": [
+        "a que altura se cultiva",
+        "altura del cafe",
+        "cultivo de altura",
+        "metros de altura",
+        "altitud del cafe"
+      ],
+      "keywords": ["altura", "metros", "altitud", "montana", "andino", "1500"],
+      "answer": "Los granos se seleccionan de fincas en altitudes andinas superiores a 1.500 metros donde la maduracion lenta en altura concentra azucares naturales y los sabores se vuelven mas definidos y equilibrados."
+    },
+    {
+      "id": "flavor",
+      "questions": [
+        "que sabor tiene",
+        "notas de sabor",
+        "perfil de sabor",
+        "como sabe el cafe",
+        "que gusto tiene",
+        "acidez del cafe",
+        "cuerpo del cafe"
+      ],
+      "keywords": [
+        "sabor",
+        "aroma",
+        "notas",
+        "perfil",
+        "cuerpo",
+        "dulce",
+        "chocolate",
+        "panela",
+        "acidez",
+        "citrico"
+      ],
+      "answer": "El perfil es balanceado: aroma marcado, notas dulces tipo chocolate y panela, acidez limpia y fresca, cuerpo sedoso y un final suave. Para una taza mas fresca elige molido por metodo; para mas aroma y complejidad, grano."
+    },
+    {
+      "id": "product_types",
+      "questions": [
+        "que tipos de cafe tienen",
+        "formatos disponibles",
+        "presentaciones",
+        "cuales son los productos",
+        "que formatos venden",
+        "tipos de empaque"
+      ],
+      "keywords": [
+        "empacado",
+        "grano",
+        "molido",
+        "mayorista",
+        "formato",
+        "250g",
+        "500g",
+        "1kg",
+        "10kg"
+      ],
+      "answer": "Ofrecemos cafe en cuatro formatos: empaque 250 g para reventa y regalos, grano 1 kg para molinos y barras de cafe, molido 500 g para casa u oficina con diferentes moliendas, y surtido mayorista 10 kg para compras por volumen."
+    },
+    {
+      "id": "brew_methods",
+      "questions": [
+        "como preparo el cafe",
+        "molienda para espresso",
+        "mejor metodo de infusion",
+        "cómo usar el grano",
+        "preparacion del molido",
+        "filtro o espresso",
+        "prensa francesa",
+        "aeropress"
+      ],
+      "keywords": [
+        "preparar",
+        "molienda",
+        "espresso",
+        "filtro",
+        "moka",
+        "prensa",
+        "guayoyo",
+        "v60",
+        "cafetera",
+        "colado"
+      ],
+      "answer": "Para espresso o filtro pide molido por metodo 500 g con la molienda ajustada al metodo. Si tienes molino o barra, el grano 1 kg te permite ajustar la molienda segun: espresso, filtro, prensa francesa, moka, guayoyo, V60 o colado."
+    },
+    {
+      "id": "wholesale",
+      "questions": [
+        "tienen venta al mayor",
+        "comprar al mayor",
+        "precio mayorista",
+        "distribuidor",
+        "revender cafe",
+        "volumen grande",
+        "compra bulk",
+        "negocios mayoristas"
+      ],
+      "keywords": [
+        "mayor",
+        "mayorista",
+        "volumen",
+        "saco",
+        "pedido grande",
+        "distribuidor",
+        "proveedor",
+        "revender",
+        "cantidad grande"
+      ],
+      "answer": "Para compras al mayor recomendamos el surtido mayorista 10 kg que permite mezclar formatos. Es ideal para distribuidores, tiendas, cafeterias y negocios con rotacion alta. Confirmamos precio final, stock y entrega directo por WhatsApp segun tu cantidad."
+    },
+    {
+      "id": "price",
+      "questions": [
+        "cuanto cuesta",
+        "precio del cafe",
+        "valor del producto",
+        "precio empacado",
+        "precio molido",
+        "precio grano",
+        "precio mayorista",
+        "hay descuento",
+        "promociones"
+      ],
+      "keywords": [
+        "precio",
+        "cuesta",
+        "costo",
+        "valor",
+        "Bs",
+        "dinero",
+        "pago",
+        "tarifa"
+      ],
+      "answer": "Los precios publicados varian segun el formato: empacado 250 g a Bs 18.500, molido 500 g a Bs 32.000, grano 1 kg a Bs 68.000 y mayorista 10 kg a Bs 650.000. Para descuentos en volumen o cotizacion especial, contacta por WhatsApp."
+    },
+    {
+      "id": "shipping",
+      "questions": [
+        "hacen envios",
+        "entrega a domicilio",
+        "como llega el pedido",
+        "ciudades de entrega",
+        "cual es el costo de envio",
+        "cuanto tardan",
+        "envio a provincia",
+        "retiro local"
+      ],
+      "keywords": [
+        "envio",
+        "entrega",
+        "delivery",
+        "despacho",
+        "ciudad",
+        "ruta",
+        "tiempo",
+        "rapidez",
+        "provincia"
+      ],
+      "answer": "Las entregas se coordinan por WhatsApp segun ciudad, cantidad y disponibilidad. Ofrecemos opciones en Caracas y provincias principales. Confirma tu ubicacion exacta y volumen del pedido para recibir cotizacion de envio y tiempo estimado."
+    },
+    {
+      "id": "payment",
+      "questions": [
+        "como pago",
+        "metodos de pago",
+        "transferencia",
+        "pago movil",
+        "punto de venta",
+        "efectivo",
+        "divisa",
+        "tarjeta credito"
+      ],
+      "keywords": [
+        "pago",
+        "transferencia",
+        "punto",
+        "movil",
+        "divisa",
+        "efectivo",
+        "dinero",
+        "pagar"
+      ],
+      "answer": "Los metodos de pago se coordinan por WhatsApp antes de cerrar el pedido. Aceptamos transferencia, pago movil, punto de venta y efectivo. Te ayudo a preparar el pedido y luego confirmas el metodo de pago mas comodo para ti."
+    },
+    {
+      "id": "availability",
+      "questions": [
+        "hay stock",
+        "esta disponible",
+        "queda cafe",
+        "en que fecha llega",
+        "cuando hay stock",
+        "hay grano",
+        "hay molido",
+        "hay empacado"
+      ],
+      "keywords": [
+        "stock",
+        "disponible",
+        "disponibilidad",
+        "queda",
+        "hay",
+        "inventario",
+        "cantidad"
+      ],
+      "answer": "La disponibilidad puede cambiar segun el formato y la cantidad solicitada. Para confirmar stock actual, dime que formato quieres y cuanta cantidad estimas. Mejor si contactas por WhatsApp para respuesta rapida y segura."
+    },
+    {
+      "id": "difference",
+      "questions": [
+        "cual es la diferencia entre grano y molido",
+        "grano o molido",
+        "empacado vs molido",
+        "que me recomendas grano o molido",
+        "cual es mejor"
+      ],
+      "keywords": [
+        "diferencia",
+        "grano",
+        "molido",
+        "empacado",
+        "versus",
+        "vs",
+        "comparar",
+        "mejor"
+      ],
+      "answer": "Grano conserva mejor aroma, dura mas tiempo y sirve si tienes molino propio. Molido es mas comodo para casa u oficina porque llega listo para preparar sin necesidad de equipo. Empacado 250 g es ideal para reventa o regalo por su presentacion."
+    },
+    {
+      "id": "retail",
+      "questions": [
+        "sirve para tienda",
+        "quiero vender",
+        "reventa",
+        "vender en anaquel",
+        "productos para tienda",
+        "negocio retail"
+      ],
+      "keywords": [
+        "tienda",
+        "reventa",
+        "vender",
+        "anaquel",
+        "regalo",
+        "retail",
+        "punto de venta"
+      ],
+      "answer": "El formato Empaque Kafé 250 g es perfecto para tiendas y reventa. Llega con presentacion lista para exhibir en anaqueles, empaques llamativos y es facil de vender por unidad. Tambien funciona como regalo corporativo o detalle premium."
+    },
+    {
+      "id": "contact",
+      "questions": [
+        "como los contacto",
+        "whatsapp",
+        "asesoria",
+        "numero de telefono",
+        "correo electronico",
+        "formulario de contacto",
+        "hablar con un asesor"
+      ],
+      "keywords": [
+        "whatsapp",
+        "contacto",
+        "asesor",
+        "mensaje",
+        "llamar",
+        "telefono",
+        "hablar"
+      ],
+      "answer": "Puedes contactarnos por WhatsApp para consultas, stock, precio, entrega y pago. Estamos listos para ayudarte a armar tu pedido, cotizar volumenes y dejar todo listo. Es el medio mas rapido y seguro."
+    },
+    {
+      "id": "coffee_story",
+      "questions": [
+        "que historia tiene el cafe",
+        "como seleccionan el cafe",
+        "proceso de seleccion",
+        "como se tuesta",
+        "proceso de tostado"
+      ],
+      "keywords": [
+        "seleccion",
+        "proceso",
+        "tostado",
+        "historia",
+        "finca",
+        "granos"
+      ],
+      "answer": "Seleccionamos granos venezolanos premium con inspiracion andina, tostados artesanalmente para resaltar dulzor natural y equilibrio. El proceso busca ofrecer una taza limpia, con caracter de altura y aroma marcado que represente el terroir andino."
+    },
+    {
+      "id": "recommended_for_home",
+      "questions": [
+        "cafe para casa",
+        "ideal para hogar",
+        "uso domestico",
+        "cafe para oficina",
+        "para la casa",
+        "para el trabajo"
+      ],
+      "keywords": ["casa", "hogar", "oficina", "diario", "domestico", "casa"],
+      "answer": "Para casa u oficina, el Molido por metodo 500 g es la opcion mas practica y recomendada. Llega listo para preparar sin necesidad de molino y funciona bien en espresso, filtro, prensa, moka o cafetera tradicional. Consumo aproximado: 2-3 semanas."
+    },
+    {
+      "id": "recommended_for_business",
+      "questions": [
+        "cafe para cafeteria",
+        "negocio de cafe",
+        "restaurante",
+        "para barista",
+        "barra de cafe"
+      ],
+      "keywords": [
+        "cafeteria",
+        "restaurante",
+        "barista",
+        "negocio",
+        "mayorista",
+        "barra"
+      ],
+      "answer": "Para cafeterias, baristas y restaurantes, el Grano espresso 1 kg es la mejor opcion. Mantiene mejor aroma en molino de barista y permite ajustar la molienda para espresso, bebidas cremosas o metodos especiales. Consumo aproximado: 2-4 semanas segun volumen."
+    },
+    {
+      "id": "coffee_character",
+      "questions": [
+        "es cafe suave o fuerte",
+        "como es el cafe",
+        "que tipo de cafe es",
+        "intenso o suave",
+        "toste claro u oscuro"
+      ],
+      "keywords": [
+        "suave",
+        "fuerte",
+        "tipo",
+        "caracter",
+        "balance",
+        "intenso",
+        "toste"
+      ],
+      "answer": "Es un cafe balanceado con cuerpo medio a ligero, aroma marcado y acidez limpia. No es extremo en amargor ni muy suave; busca un perfil premium que sea agradable en cada taza sin saturar el paladar."
+    },
+    {
+      "id": "storage",
+      "questions": [
+        "como se conserva el cafe",
+        "duracion del cafe",
+        "guardar cafe",
+        "caducidad",
+        "fecha de vencimiento",
+        "como almacenar"
+      ],
+      "keywords": [
+        "guardar",
+        "conservar",
+        "duracion",
+        "estanteria",
+        "fresco",
+        "caducidad",
+        "tiempo"
+      ],
+      "answer": "Conserva bien el cafe en lugar fresco, seco y oscuro, alejado de luz y calor. Si es molido, consume dentro de 2-3 semanas para disfrutar mejor aroma. Si es en grano, puede durar 1-2 meses mas porque mantiene mejor sus aceites."
+    },
+    {
+      "id": "faq_general",
+      "questions": [
+        "que es kafé ca",
+        "quienes son",
+        "sobre la marca",
+        "historia de la empresa",
+        "mision y vision"
+      ],
+      "keywords": [
+        "marca",
+        "kafe ca",
+        "kafé",
+        "empresa",
+        "distribuidora",
+        "sobre nosotros"
+      ],
+      "answer": "Kafé C.A. es una distribuidora de cafe venezolano premium enfocada en origen andino. Abastecemos formatos para tienda, hogar, cafeterias, restaurantes y pedidos mayoristas. Nuestro compromiso es ofrecer cafe con caracter, aroma y perfil balanceado."
+    },
+    {
+      "id": "first_time_buyer",
+      "questions": [
+        "es mi primera compra",
+        "que me recomiendas",
+        "por donde empiezo",
+        "soy nuevo cliente"
+      ],
+      "keywords": [
+        "primera vez",
+        "primer pedido",
+        "nuevo",
+        "recomendacion",
+        "donde empiezo"
+      ],
+      "answer": "Para primera compra recomiendo: si bebes cafe diario, prueba Molido por metodo 500 g. Si te gusta experimentar, Grano 1 kg. Si quieres revender, Empaque Kafé 250 g. Puedo ayudarte a elegir segun tu uso actual. Contactame por WhatsApp para asesorarte."
+    },
+    {
+      "id": "quantity_recommendation",
+      "questions": [
+        "que cantidad compro",
+        "cuanto me duraria",
+        "como se cuanto comprar",
+        "cantidad adecuada"
+      ],
+      "keywords": [
+        "cantidad",
+        "cuanto",
+        "duracion",
+        "cuantos gramos",
+        "cantidad diaria"
+      ],
+      "answer": "Molido 500 g dura aprox 2-3 semanas para consumo diario (3-4 tasas diarias). Grano 1 kg dura 4-8 semanas segun uso. Para volumenes o negocios, coordina por WhatsApp. Tipo de preparacion tambien afecta: espresso usa mas, filtro menos."
+    },
+    {
+      "id": "gift_option",
+      "questions": [
+        "quiero regalar cafe",
+        "cafe para regalo",
+        "regalo corporativo",
+        "detalles para empresa"
+      ],
+      "keywords": [
+        "regalo",
+        "regalar",
+        "corporativo",
+        "detalle",
+        "obsequio",
+        "empresa"
+      ],
+      "answer": "El Empaque Kafé 250 g es perfecto para regalar. Tiene presentacion premium, empaque limpio y elegante que impresiona. Ideal para: cumpleaños, detalles corporativos, eventos, navidad y clientes especiales. Tambien puedes armar combos mixtos."
+    },
+    {
+      "id": "minimum_order",
+      "questions": [
+        "cual es el pedido minimo",
+        "puedo comprar solo una bolsa",
+        "cantidad minima"
+      ],
+      "keywords": [
+        "minimo",
+        "cantidad minima",
+        "puedo comprar",
+        "menor cantidad"
+      ],
+      "answer": "Puedes comprar desde una sola unidad de cualquier formato. No hay pedido minimo. Para ordenes muy pequenas consulta el costo de envio. Si es mayorista (volumenes grandes), contacta por WhatsApp para mejores condiciones."
+    },
+    {
+      "id": "bulk_discount",
+      "questions": [
+        "hay descuento por volumen",
+        "precio especial cantidad",
+        "ofertas mayorista",
+        "promocion volumen"
+      ],
+      "keywords": [
+        "descuento",
+        "oferta",
+        "promocion",
+        "especial",
+        "volumen",
+        "precio"
+      ],
+      "answer": "Para compras por volumen tenemos opciones especiales. Contacta por WhatsApp con la cantidad estimada y el formato que necesitas. El equipo preparara una cotizacion con precio final, envio y condiciones adaptadas a tu pedido."
+    },
+    {
+      "id": "grinding_options",
+      "questions": [
+        "se puede pedir molienda especial",
+        "que tipos de molienda hay",
+        "molienda gruesa o fina",
+        "molienda personalizada"
+      ],
+      "keywords": [
+        "molienda",
+        "molido",
+        "granulometria",
+        "gruesa",
+        "fina",
+        "personalizado"
+      ],
+      "answer": "El Molido por metodo 500 g oferece molienda ajustada para: espresso, filtro, prensa francesa, moka, guayoyo, colado y V60. Puedes pedir el formato que necesites. Contacta por WhatsApp indicando tu metodo de preparacion favorito."
+    },
+    {
+      "id": "roast_level",
+      "questions": [
+        "cual es el nivel de toste",
+        "toste claro o oscuro",
+        "como es el toste"
+      ],
+      "keywords": ["toste", "tostado", "claro", "oscuro", "nivel", "medio"],
+      "answer": "Nuestro cafe tiene un toste medio balanceado pensado para resaltar notas andinas sin opacar con amargor. Ofrece complejidad en aroma, dulzor natural y acidez brillante. Es toste premium, no extremo."
+    },
+    {
+      "id": "carbon_neutral",
+      "questions": ["es cafe organico", "sustentable", "responsable"],
+      "keywords": [
+        "organico",
+        "sustentable",
+        "responsable",
+        "ambiental",
+        "verde"
+      ],
+      "answer": "Nuestro cafe procede de fincas con tradicion en cultivo andino responsable. El trabajo de seleccion y tostado busca mantener calidad premium respetando los procesos. Consulta por WhatsApp sobre detalles especificos de procedencia de cada lote."
+    },
+    {
+      "id": "seasonal_variants",
+      "questions": [
+        "hay variedades estacionales",
+        "cafes especiales",
+        "ediciones limitadas"
+      ],
+      "keywords": ["estacional", "especial", "limitado", "variedad", "lote"],
+      "answer": "Trabajamos con selecciones de diferentes lotes del ano. Cada temporada trae matices distintos en aroma y sabor segun altitud y condiciones. Contacta por WhatsApp para conocer lo disponible en el momento y variedades especiales."
+    },
+    {
+      "id": "certification",
+      "questions": [
+        "tienen certificacion",
+        "es garantizado",
+        "calidad asegurada"
+      ],
+      "keywords": [
+        "certificacion",
+        "certificado",
+        "garantia",
+        "calidad",
+        "asegurado"
+      ],
+      "answer": "Nuestro cafe es seleccionado y tostado con estandares de calidad premium. Cada lote se controla para asegurar aroma, sabor y frescura. La garantia es nuestra reputacion y el compromiso con cada cliente."
+    },
+    {
+      "id": "customer_reviews",
+      "questions": ["que dicen otros clientes", "opiniones", "valoraciones"],
+      "keywords": ["cliente", "opinion", "valoracion", "resena", "experiencia"],
+      "answer": "Nuestros clientes valoran el sabor balanceado, aroma marcado y la presentacion premium del cafe. Muchos vuelven a comprar porque sienten la diferencia de altura y tostado artesanal. Puedes dejar tu propia valoracion tras la compra."
+    },
+    {
+      "id": "subscription",
+      "questions": [
+        "hay suscripcion",
+        "compra recurrente",
+        "entrega automatica"
+      ],
+      "keywords": [
+        "suscripcion",
+        "recurrente",
+        "automatico",
+        "mensual",
+        "periodico"
+      ],
+      "answer": "Actualmente coordinamos pedidos periodicos por WhatsApp. Si bebes cafe regular, puedes contactarnos para acordar un esquema de entregas mensuales o semanales con precio consistente."
+    }
+  ]
+}

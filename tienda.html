@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tienda de Kafé C.A., descubre cafés en grano, molido, gourmet y empacado para tu negocio o consumo personal."
+    />
+    <title>Tienda | Kafé C.A.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img
+          src="assets/imagenes/logo/OPC_2.png"
+          alt="Kafé C.A."
+          class="brand-mark"
+        />
+        <span class="brand-copy">
+          <strong>Kafé C.A.</strong>
+          <small>Café andino</small>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Principal">
+        <a href="index.html#origen">Origen</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="index.html#historia">Historia</a>
+        <a href="index.html#mayoristas">Mayoristas</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="carrito.html" class="cart-link">Carrito</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section cart-section">
+        <div class="section-heading centered">
+          <p class="section-kicker">Tienda</p>
+          <h2>Encuentra tu café ideal aquí.</h2>
+          <p>Explora las variedades disponibles y agrégalas a tu carrito.</p>
+        </div>
+
+        <div class="product-selector">
+          <div class="catalog-tools" aria-label="Filtros de producto">
+            <button
+              class="filter-btn is-active"
+              type="button"
+              data-filter="todos"
+            >
+              Todos
+            </button>
+            <button class="filter-btn" type="button" data-filter="grano">
+              Café en pepa
+            </button>
+            <button class="filter-btn" type="button" data-filter="gourmet">
+              Café gourmet
+            </button>
+            <button class="filter-btn" type="button" data-filter="empacado">
+              Empacado
+            </button>
+            <button class="filter-btn" type="button" data-filter="molido">
+              Molido
+            </button>
+            <button class="filter-btn" type="button" data-filter="mayorista">
+              Mayorista
+            </button>
+          </div>
+
+          <div class="product-grid">
+            <article
+              class="product-card"
+              data-category="empacado"
+              data-classification="gourmet"
+              data-id="empacado-250g"
+              data-name="Empaque Kafé 250 g"
+              data-price="18500"
+              data-brand="Kafé C.A."
+              data-producer="Productores Andinos"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&w=720&q=80"
+                alt="Bolsa de café premium"
+              />
+              <div>
+                <span class="product-tag">Reventa</span>
+                <h3>Empaque Kafé 250 g</h3>
+                <p>
+                  Presentación lista para anaqueles, regalos corporativos y
+                  reventa.
+                </p>
+                <div class="product-card-info">
+                  <span class="product-brand">Marca: Kafé C.A.</span>
+                  <span class="product-producer">Productor: Andes Café</span>
+                </div>
+                <div class="product-card-info-extra">
+                  <span>Peso: 250 g</span>
+                  <span>Formato pequeño, ideal para tienda o regalo.</span>
+                </div>
+                <div class="product-card-meta">
+                  <strong>Bs 18.500</strong>
+                  <button class="btn btn-primary add-to-cart" type="button">
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="product-card"
+              data-category="grano"
+              data-classification="pepa"
+              data-id="grano-1kg"
+              data-name="Grano espresso 1 kg"
+              data-price="68000"
+              data-brand="Kafé C.A."
+              data-producer="Productores Andinos"
+            >
+              <img src="assets/molido.png" alt="Granos de café tostado" />
+              <div>
+                <span class="product-tag">Barista</span>
+                <h3>Grano espresso 1 kg</h3>
+                <p>
+                  Grano entero para molinos y barras, conserva mejor aroma y
+                  frescura.
+                </p>
+                <div class="product-card-info">
+                  <span class="product-brand">Marca: Kafé C.A.</span>
+                  <span class="product-producer">Productor: Andes Café</span>
+                </div>
+                <div class="product-card-info-extra">
+                  <span>Peso: 1 kg</span>
+                  <span>Café en pepa para molienda personalizada.</span>
+                </div>
+                <div class="product-card-meta">
+                  <strong>Bs 68.000</strong>
+                  <button class="btn btn-primary add-to-cart" type="button">
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="product-card"
+              data-category="molido"
+              data-classification="gourmet"
+              data-id="molido-500g"
+              data-name="Molido por método 500 g"
+              data-price="32000"
+              data-brand="Kafé C.A."
+              data-producer="Productores Andinos"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=720&q=80"
+                alt="Café molido junto a una taza"
+              />
+              <div>
+                <span class="product-tag">Diario</span>
+                <h3>Molido por método 500 g</h3>
+                <p>
+                  Molido preparado para espresso, filtro y prensa con perfil
+                  balanceado.
+                </p>
+                <div class="product-card-info">
+                  <span class="product-brand">Marca: Kafé C.A.</span>
+                  <span class="product-producer">Productor: Andes Café</span>
+                </div>
+                <div class="product-card-info-extra">
+                  <span>Peso: 500 g</span>
+                  <span>Listo para preparar sin molino.</span>
+                </div>
+                <div class="product-card-meta">
+                  <strong>Bs 32.000</strong>
+                  <button class="btn btn-primary add-to-cart" type="button">
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="product-card"
+              data-category="mayorista"
+              data-classification="mayorista"
+              data-id="mayorista-10kg"
+              data-name="Surtido mayorista 10 kg"
+              data-price="650000"
+              data-brand="Kafé C.A."
+              data-producer="Productores Andinos"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=720&q=80"
+                alt="Sacos de café"
+              />
+              <div>
+                <span class="product-tag">Volumen</span>
+                <h3>Surtido mayorista 10 kg</h3>
+                <p>
+                  Combo grande para pedidos por volumen, ideal para negocios y
+                  reventa.
+                </p>
+                <div class="product-card-info">
+                  <span class="product-brand">Marca: Kafé C.A.</span>
+                  <span class="product-producer">Productor: Andes Café</span>
+                </div>
+                <div class="product-card-info-extra">
+                  <span>Peso: 10 kg</span>
+                  <span>Incluye mezcla de formatos para tu negocio.</span>
+                </div>
+                <div class="product-card-meta">
+                  <strong>Bs 650.000</strong>
+                  <button class="btn btn-primary add-to-cart" type="button">
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="product-card"
+              data-category="empacado"
+              data-classification="gourmet"
+              data-id="empacado-500g"
+              data-name="Empaque Kafé 500 g"
+              data-price="32000"
+              data-brand="Kafé C.A."
+              data-producer="Productores Andinos"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=720&q=80"
+                alt="Bolsa de café grande"
+              />
+              <div>
+                <span class="product-tag">Premium</span>
+                <h3>Empaque Kafé 500 g</h3>
+                <p>Presentación más grande para hogar o regalo premium.</p>
+                <div class="product-card-meta">
+                  <strong>Bs 32.000</strong>
+                  <button class="btn btn-primary add-to-cart" type="button">
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="product-card"
+              data-category="molido"
+              data-classification="descafeinado"
+              data-id="molido-descafeinado-250g"
+              data-name="Blend descafeinado 250 g"
+              data-price="21000"
+              data-brand="Kafé C.A."
+              data-producer="Productores Andinos"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=720&q=80"
+                alt="Café descafeinado"
+              />
+              <div>
+                <span class="product-tag">Suave</span>
+                <h3>Blend descafeinado 250 g</h3>
+                <p>
+                  Perfecto para quienes prefieren evitar la cafeína sin perder
+                  sabor.
+                </p>
+                <div class="product-card-meta">
+                  <strong>Bs 21.000</strong>
+                  <button class="btn btn-primary add-to-cart" type="button">
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="product-card"
+              data-category="empacado"
+              data-classification="capsulas"
+              data-id="capsulas-12u"
+              data-name="Cápsulas compatibles (12 u)"
+              data-price="14000"
+              data-brand="Kafé C.A."
+              data-producer="Productores Andinos"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=720&q=80"
+                alt="Cápsulas de café"
+              />
+              <div>
+                <span class="product-tag">Práctico</span>
+                <h3>Cápsulas compatibles (12 u)</h3>
+                <p>Formato práctico para cafeteras de cápsulas compatibles.</p>
+                <div class="product-card-meta">
+                  <strong>Bs 14.000</strong>
+                  <button class="btn btn-primary add-to-cart" type="button">
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="product-card"
+              data-category="gourmet"
+              data-classification="edicion"
+              data-id="edicion-especial-250g"
+              data-name="Edición Especial 250 g"
+              data-price="27000"
+              data-brand="Kafé C.A."
+              data-producer="Productores Andinos"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=720&q=80"
+                alt="Edición especial de café"
+              />
+              <div>
+                <span class="product-tag">Edición</span>
+                <h3>Edición Especial 250 g</h3>
+                <p>Selección limitada con notas frutales y chocolateadas.</p>
+                <div class="product-card-meta">
+                  <strong>Bs 27.000</strong>
+                  <button class="btn btn-primary add-to-cart" type="button">
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div
+          class="cart-added-preview"
+          id="cart-added-preview"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          <div class="preview-header">
+            <div>
+              <strong>Agregado al carrito</strong>
+              <span id="preview-items-count">0 productos · 0 unidades</span>
+            </div>
+            <button
+              class="preview-close"
+              type="button"
+              aria-label="Cerrar vista rápida"
+            >
+              ×
+            </button>
+          </div>
+          <div class="preview-items" id="preview-items"></div>
+          <div class="preview-footer">
+            <strong id="preview-cart-total">Total carrito: Bs 0</strong>
+          </div>
+          <div class="preview-actions">
+            <a class="btn btn-primary" href="checkout.html">Procesar compra</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="assets/imagenes/logo/kafe-logo-dark.svg" alt="Kafé C.A." />
+      <p>Café venezolano premium, tradición andina y presencia moderna.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>
