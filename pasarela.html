@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pasarela de pago | Kafé C.A.</title>
+    <title>Pago seguro | Kaf&eacute; C.A.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -11,51 +17,205 @@
       <a class="brand" href="index.html" aria-label="Ir al inicio">
         <img
           src="assets/imagenes/logo/OPC_2.png"
-          alt="Kafé C.A."
+          alt="Kaf&eacute; C.A."
           class="brand-mark"
         />
         <span class="brand-copy">
-          <strong>Kafé C.A.</strong>
-          <small>Café andino</small>
+          <strong>Kaf&eacute; C.A.</strong>
+          <small>Caf&eacute; andino</small>
         </span>
       </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Abrir men&uacute;"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Principal">
+        <a href="index.html#origen">Origen</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="index.html#historia">Historia</a>
+        <a href="index.html#mayoristas">Mayoristas</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="carrito.html" class="cart-link"
+          >Carrito <span class="cart-count" aria-live="polite">0</span></a
+        >
+      </nav>
     </header>
 
     <main>
-      <section class="section">
-        <div class="section-heading centered">
-          <p class="section-kicker">Pasarela de pago</p>
-          <h2>Simulación de pago</h2>
-          <p>Aquí termina el flujo de pago antes de la pasarela real.</p>
+      <section class="section checkout-section gateway-section">
+        <div class="checkout-hero-panel">
+          <div class="section-heading">
+            <p class="section-kicker">Pago seguro</p>
+            <h2>Completa tu pedido.</h2>
+          </div>
+          <div class="checkout-steps" aria-label="Progreso de compra">
+            <span>Carrito</span>
+            <span>Checkout</span>
+            <span class="is-active">Pago</span>
+          </div>
         </div>
 
-        <div class="checkout-grid">
-          <div class="checkout-summary full-width">
-            <h3>Detalles de pago</h3>
+        <div class="checkout-grid gateway-grid">
+          <form id="payment-form" class="checkout-form">
+            <div class="checkout-form-card gateway-card-panel">
+              <div class="form-section-title">
+                <span>01</span>
+                <div>
+                  <h3>Tarjeta</h3>
+                </div>
+              </div>
+
+              <div class="bank-card" aria-hidden="true">
+                <div class="bank-card-top">
+                  <span>KAF&Eacute; PAY</span>
+                  <strong id="card-brand">VISA</strong>
+                </div>
+                <div class="bank-card-number" id="card-preview-number">
+                  0000 0000 0000 0000
+                </div>
+                <div class="bank-card-bottom">
+                  <span id="card-preview-name">NOMBRE DEL TITULAR</span>
+                  <span id="card-preview-expiry">MM/AA</span>
+                </div>
+              </div>
+
+              <div class="form-grid two-columns">
+                <label class="full-span">
+                  Nombre en la tarjeta
+                  <input
+                    id="card-name"
+                    type="text"
+                    name="titular"
+                    autocomplete="cc-name"
+                    required
+                  />
+                </label>
+                <label class="full-span">
+                  N&uacute;mero de tarjeta
+                  <input
+                    id="card-number"
+                    type="text"
+                    name="numero"
+                    inputmode="numeric"
+                    autocomplete="cc-number"
+                    maxlength="19"
+                    pattern="[0-9 ]{19}"
+                    placeholder="0000 0000 0000 0000"
+                    title="Ingresa 16 d&iacute;gitos"
+                    required
+                  />
+                </label>
+                <label>
+                  Vencimiento
+                  <input
+                    id="card-expiry"
+                    type="text"
+                    name="vencimiento"
+                    inputmode="numeric"
+                    autocomplete="cc-exp"
+                    maxlength="5"
+                    pattern="(0[1-9]|1[0-2])/[0-9]{2}"
+                    placeholder="MM/AA"
+                    title="Usa el formato MM/AA"
+                    required
+                  />
+                </label>
+                <label>
+                  CVC
+                  <input
+                    id="card-cvc"
+                    type="password"
+                    name="cvc"
+                    inputmode="numeric"
+                    autocomplete="cc-csc"
+                    maxlength="4"
+                    pattern="[0-9]{3,4}"
+                    placeholder="000"
+                    title="Ingresa 3 o 4 d&iacute;gitos"
+                    required
+                  />
+                </label>
+                <label class="full-span">
+                  C&eacute;dula o RIF
+                  <input
+                    type="text"
+                    name="identificacion"
+                    autocomplete="off"
+                    placeholder="V-00000000"
+                    required
+                  />
+                </label>
+              </div>
+            </div>
+
+            <div class="checkout-form-card gateway-card-panel">
+              <div class="form-section-title">
+                <span>02</span>
+                <div>
+                  <h3>Autorizaci&oacute;n</h3>
+                </div>
+              </div>
+
+              <div class="gateway-auth-list" id="gateway-auth-list">
+                <span class="is-active">Datos de compra</span>
+                <span>Validaci&oacute;n bancaria</span>
+                <span>Comprobante</span>
+              </div>
+
+              <p class="checkout-status" id="payment-status" role="status"></p>
+            </div>
+
+            <div class="checkout-actions">
+              <button
+                class="btn btn-primary"
+                id="confirm-payment"
+                type="submit"
+              >
+                Autorizar pago
+              </button>
+              <a class="btn btn-ghost" href="checkout.html">Volver</a>
+            </div>
+          </form>
+
+          <aside class="checkout-summary gateway-summary">
+            <span class="summary-kicker">Orden</span>
+            <h3 id="payment-order">KAFE-000000</h3>
             <div id="payment-details" class="checkout-items"></div>
+            <div class="checkout-summary-line">
+              <span>M&eacute;todo</span>
+              <strong id="payment-method-label">Tarjeta</strong>
+            </div>
+            <div class="checkout-summary-line">
+              <span>Cliente</span>
+              <strong id="payment-client">Por confirmar</strong>
+            </div>
+            <div class="checkout-summary-line">
+              <span>Entrega</span>
+              <strong id="payment-delivery">Por coordinar</strong>
+            </div>
             <div class="checkout-total">
-              <span>Total a pagar</span>
+              <span>Total</span>
               <strong id="payment-total">Bs 0</strong>
             </div>
-            <div id="payment-method" class="payment-instructions"></div>
-            <div class="checkout-actions">
-              <a class="btn btn-primary" href="carrito.html"
-                >Volver al carrito</a
-              >
-              <button class="btn btn-ghost" id="confirm-payment" type="button">
-                Confirmar pago simulado
-              </button>
-            </div>
-            <div id="payment-status" class="payment-status"></div>
-          </div>
+            <div class="gateway-receipt" id="gateway-receipt" hidden></div>
+          </aside>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <img src="assets/imagenes/logo/kafe-logo-dark.svg" alt="Kafé C.A." />
+      <img src="assets/imagenes/logo/kafe-logo-dark.svg" alt="Kaf&eacute; C.A." />
+      <p>Caf&eacute; venezolano premium, tradici&oacute;n andina y presencia moderna.</p>
     </footer>
 
+    <script src="js/main.js"></script>
     <script src="js/pasarela.js"></script>
   </body>
 </html>
