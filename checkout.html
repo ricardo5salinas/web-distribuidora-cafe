@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Procesar compra | Kafé C.A.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -19,54 +25,190 @@
           <small>Café andino</small>
         </span>
       </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Principal">
+        <a href="index.html#origen">Origen</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="index.html#historia">Historia</a>
+        <a href="index.html#mayoristas">Mayoristas</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="carrito.html" class="cart-link"
+          >Carrito <span class="cart-count" aria-live="polite">0</span></a
+        >
+      </nav>
     </header>
 
     <main>
-      <section class="section">
-        <div class="section-heading centered">
-          <p class="section-kicker">Finalizar compra</p>
-          <h2>Datos de envío y pago</h2>
-          <p>Completa la información para procesar tu pedido.</p>
+      <section class="section checkout-section">
+        <div class="checkout-hero-panel">
+          <div class="section-heading">
+            <p class="section-kicker">Finalizar compra</p>
+            <h2>Datos de envío y pago.</h2>
+            <p>
+              Confirma tu información, selecciona cómo quieres recibir el pedido
+              y elige el método de pago que mejor se adapte a tu compra.
+            </p>
+          </div>
+          <div class="checkout-steps" aria-label="Progreso de compra">
+            <span>Carrito</span>
+            <span class="is-active">Checkout</span>
+            <span>Pago</span>
+          </div>
         </div>
 
         <div class="checkout-grid">
           <form id="checkout-form" class="checkout-form">
-            <label>
-              Nombre completo
-              <input type="text" name="nombre" required />
-            </label>
-            <label>
-              Teléfono (WhatsApp)
-              <input type="tel" name="telefono" required />
-            </label>
-            <label>
-              Dirección de entrega
-              <input type="text" name="direccion" required />
-            </label>
-            <label>
-              Ciudad
-              <input type="text" name="ciudad" required />
-            </label>
-            <label>
-              Código postal
-              <input type="text" name="postal" />
-            </label>
+            <div class="checkout-form-card">
+              <div class="form-section-title">
+                <span>01</span>
+                <div>
+                  <h3>Contacto</h3>
+                  <p>Usaremos estos datos para confirmar disponibilidad.</p>
+                </div>
+              </div>
+              <div class="form-grid two-columns">
+                <label>
+                  Nombre completo
+                  <input
+                    type="text"
+                    name="nombre"
+                    autocomplete="name"
+                    required
+                  />
+                </label>
+                <label>
+                  Teléfono (WhatsApp)
+                  <input
+                    type="tel"
+                    name="telefono"
+                    autocomplete="tel"
+                    placeholder="+58 000 0000000"
+                    required
+                  />
+                </label>
+                <label class="full-span">
+                  Correo electrónico
+                  <input
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="correo@ejemplo.com"
+                  />
+                </label>
+              </div>
+            </div>
 
-            <fieldset>
-              <legend>Método de pago</legend>
-              <label
-                ><input type="radio" name="pago" value="tarjeta" checked />
-                Tarjeta</label
-              >
-              <label
-                ><input type="radio" name="pago" value="movil" /> Pago
-                móvil</label
-              >
-              <label
-                ><input type="radio" name="pago" value="transferencia" />
-                Transferencia</label
-              >
+            <div class="checkout-form-card">
+              <div class="form-section-title">
+                <span>02</span>
+                <div>
+                  <h3>Entrega</h3>
+                  <p>Indica dónde y cómo deseas recibir tu pedido.</p>
+                </div>
+              </div>
+              <div class="delivery-options">
+                <label class="option-card">
+                  <input
+                    type="radio"
+                    name="entrega"
+                    value="domicilio"
+                    checked
+                  />
+                  <span>
+                    <strong>Entrega a domicilio</strong>
+                    <small>Coordinación directa por WhatsApp.</small>
+                  </span>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="entrega" value="retiro" />
+                  <span>
+                    <strong>Retiro acordado</strong>
+                    <small>Definimos punto y horario contigo.</small>
+                  </span>
+                </label>
+              </div>
+              <div class="form-grid two-columns">
+                <label class="full-span">
+                  Dirección de entrega
+                  <input
+                    type="text"
+                    name="direccion"
+                    autocomplete="street-address"
+                    required
+                  />
+                </label>
+                <label>
+                  Ciudad
+                  <input
+                    type="text"
+                    name="ciudad"
+                    autocomplete="address-level2"
+                    required
+                  />
+                </label>
+                <label>
+                  Código postal
+                  <input
+                    type="text"
+                    name="postal"
+                    autocomplete="postal-code"
+                  />
+                </label>
+                <label class="full-span">
+                  Notas para el pedido
+                  <textarea
+                    name="notas"
+                    rows="3"
+                    placeholder="Horario preferido, referencia o instrucciones especiales."
+                  ></textarea>
+                </label>
+              </div>
+            </div>
+
+            <fieldset class="checkout-form-card payment-fieldset">
+              <div class="form-section-title">
+                <span>03</span>
+                <div>
+                  <legend>Método de pago</legend>
+                  <p>Elige el de tu preferencia.</p>
+                </div>
+              </div>
+              <div class="payment-options">
+                <label class="option-card">
+                  <input type="radio" name="pago" value="tarjeta" checked />
+                  <span>
+                    <strong>Tarjeta</strong>
+                    <small>Continúa a la pasarela de pago.</small>
+                  </span>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="pago" value="movil" />
+                  <span>
+                    <strong>Pago móvil</strong>
+                    <small>Genera datos para pagar y copiar referencia.</small>
+                  </span>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="pago" value="transferencia" />
+                  <span>
+                    <strong>Transferencia</strong>
+                    <small>Genera datos bancarios del pedido.</small>
+                  </span>
+                </label>
+              </div>
             </fieldset>
+
+            <p class="checkout-status" id="checkout-status" role="status"></p>
 
             <div class="checkout-actions">
               <button
@@ -81,8 +223,17 @@
           </form>
 
           <aside class="checkout-summary">
+            <span class="summary-kicker">Resumen</span>
             <h3>Resumen del pedido</h3>
             <div id="checkout-items" class="checkout-items"></div>
+            <div class="checkout-summary-line">
+              <span>Unidades</span>
+              <strong id="checkout-count">0</strong>
+            </div>
+            <div class="checkout-summary-line">
+              <span>Entrega</span>
+              <strong id="checkout-delivery">Por coordinar</strong>
+            </div>
             <div class="checkout-total">
               <span>Total estimado</span>
               <strong id="checkout-total">Bs 0</strong>
@@ -98,8 +249,10 @@
 
     <footer class="site-footer">
       <img src="assets/imagenes/logo/kafe-logo-dark.svg" alt="Kafé C.A." />
+      <p>Café venezolano premium, tradición andina y presencia moderna.</p>
     </footer>
 
+    <script src="js/main.js"></script>
     <script src="js/checkout.js"></script>
   </body>
 </html>

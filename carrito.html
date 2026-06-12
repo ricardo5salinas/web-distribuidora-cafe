@@ -46,21 +46,28 @@
         <a href="index.html#historia">Historia</a>
         <a href="index.html#mayoristas">Mayoristas</a>
         <a href="index.html#contacto">Contacto</a>
-        <a href="carrito.html" class="cart-link">Carrito</a>
+        <a href="carrito.html" class="cart-link"
+          >Carrito <span class="cart-count" aria-live="polite">0</span></a
+        >
       </nav>
     </header>
 
     <main>
       <section class="section cart-section">
-        <div class="section-heading centered">
-          <p class="section-kicker">Carrito</p>
-          <h2>Tu carrito de compras</h2>
-          <p>
-            Revisa los productos seleccionados y ajusta las cantidades antes del
-            pago.
-          </p>
+        <div class="cart-hero-panel">
+          <div class="section-heading">
+            <p class="section-kicker">Carrito</p>
+            <h2>Tu selección Kafé.</h2>
+            <p>
+              Revisa formatos, cantidades y subtotal antes de finalizar el
+              pedido.
+            </p>
+          </div>
+          <img
+            src="assets/hero-cafe.png"
+            alt="Empaques de café Kafé C.A."
+          />
         </div>
-
         <div class="cart-page">
           <div class="cart-main">
             <div class="cart-items-list" id="cart-items-list"></div>
@@ -70,6 +77,8 @@
           </div>
 
           <aside class="cart-summary-panel">
+            <span class="summary-kicker">Resumen</span>
+            <h3>Pedido actual</h3>
             <div class="cart-summary-row">
               <span>Artículos</span>
               <strong id="cart-count">0</strong>
